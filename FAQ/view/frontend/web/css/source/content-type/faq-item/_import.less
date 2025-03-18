@@ -1,0 +1,53 @@
+//
+//  FAQ item styles
+//  _____________________________________________
+
+& when (@media-common = true) {
+    [data-content-type="faq-item"] {
+        overflow: hidden;
+        
+        [data-role="content"] {
+            display: none;
+        }
+
+        [data-role="collapsible"] {
+            font-weight: 500;
+            line-height: 1.4;
+            font-size: 1.6rem;
+            padding: 1.5rem !important;
+            color: #2c2c2c;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            &:hover {
+                color: #1979c3;
+            }
+
+            &:after {
+                content: '';
+                width: 12px;
+                height: 12px;
+                border-right: 2px solid #2c2c2c;
+                border-bottom: 2px solid #2c2c2c;
+                transform: rotate(45deg);
+                transition: transform 0.3s ease;
+                margin-left: 1rem;
+            }
+        }
+
+        &[data-expanded="true"] {
+            [data-role="collapsible"]:after {
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}

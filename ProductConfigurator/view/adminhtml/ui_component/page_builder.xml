@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<pagebuilder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/ui_component/pagebuilder.xsd">
+    
+    <contentType name="product_configurator">
+        <label>Product Configurator</label>
+        <componentType>contentType</componentType>
+        <formElements>
+            <text name="title">
+                <label translate="true">Title</label>
+                <formElement>input</formElement>
+            </text>
+        </formElements>
+    </contentType>
+
+</pagebuilder>

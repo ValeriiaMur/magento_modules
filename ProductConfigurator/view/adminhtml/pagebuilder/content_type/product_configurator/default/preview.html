@@ -1,0 +1,10 @@
+<div attr="data.main.attributes" ko-style="data.main.style" css="data.main.css" class="pagebuilder-content-type pagebuilder-product-configurator" event="{ mouseover: onMouseOver, mouseout: onMouseOut }">
+    <div class="pagebuilder-toolbar-container" render="getToolbarTemplate"></div>
+    <div class="product-configurator-element"
+         attr="{'data-marketingsku': data.marketingsku.attributes['data-marketingsku']}">
+         <div class="product-configurator-placeholder-content">
+            <span if="data.marketingsku.attributes['data-marketingsku']" text="'Product Configurator - SKU: ' + data.marketingsku.attributes['data-marketingsku']"></span>
+            <span ifnot="data.marketingsku.attributes['data-marketingsku']">Product Configurator - No SKU Specified</span>
+         </div>
+    </div>
+</div>

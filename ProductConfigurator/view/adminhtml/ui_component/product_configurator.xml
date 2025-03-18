@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/form.xsd">
+    <fieldset name="general" sortOrder="10">
+        <field name="title" sortOrder="10" formElement="input">
+            <settings>
+                <label translate="true">Title</label>
+                <dataScope>title</dataScope>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+            </settings>
+        </field>
+    </fieldset>
+</form>

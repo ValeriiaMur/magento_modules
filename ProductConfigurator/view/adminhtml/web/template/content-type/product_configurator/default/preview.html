@@ -1,0 +1,23 @@
+<!-- preview.html -->
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type pagebuilder-product-configurator"
+     css="data.main.css">
+    <render args="getOptions().template"></render>
+    <div class="product-configurator-container" style="padding: 20px; background: #f8f8f8; border: 1px solid #e3e3e3; border-radius: 4px;">
+        <div style="margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #e3e3e3;">
+            <h4 style="margin: 0; color: #514943; font-size: 14px; font-weight: 600;">Product Configurator</h4>
+        </div>
+        <div class="product-configurator-field">
+            <label style="display: block; margin-bottom: 8px; color: #41362f; font-weight: 600;">Marketing SKU</label>
+            <div class="tw"
+                 attr="data.marketingsku.attributes"
+                 ko-style="data.marketingsku.style"
+                 css="data.marketingsku.css"
+                 id="product"
+                 style="padding: 8px; background: #fff; border: 1px solid #c2c2c2; border-radius: 3px;"
+                 data-bind="liveEdit: { field: 'data-marketingsku', placeholder: $t('Enter Marketing SKU') }">
+            </div>
+        </div>
+    </div>
+</div>

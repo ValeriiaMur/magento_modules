@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="sg_product_configurator" class="SG\ProductConfigurator\Block\Widget\ProductConfigurator" >
+        <label>Product Configurator</label>
+        <description>Displays the Product Configurator with a Marketing SKU</description>
+        <parameters>
+            <parameter name="marketing_sku" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Marketing SKU</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
